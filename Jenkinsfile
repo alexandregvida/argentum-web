@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh 'mvn clean package' 
+                sh 'mvn clean package sonar:sonar' 
                 echo 'Building1..'
                 echo 'Building2..'
                 echo 'Building3..'
